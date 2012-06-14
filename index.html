@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Sokoban Applet</title>
+  </head>
+
+  <body>
+
+    <h1>Sokoban Applet</h1>
+
+    <div class="info">
+      <h2>¿Qué es "Sokoban"?</h2>
+      “Sokoban” es una palabra japonesa (倉庫番) que significa responsable de almacén. Se trata de un puzzle de inteligencia que no requiere de grandes reflejos (incluso en el applet es posible deshacer movimientos) y consiste en la colocación de cajas (u otros objetos, personalizables en el applet) moviendolas en un lugar concreto (como un “almacén”, de ahí el nombre) en las posiciones que se indiquen.<br/>
+La dificultad de los puzzles puede ser  muy variada, desde ser tan facil que puede llegar a aburrir facilmente hasta poder llegar a ser tan dificil que parecezca totalmente imposible.<br/>
+    </div>
+
+    <div class="info">
+      <h2>Controles del juego</h2>
+      Usa las flechas de dirección para mover al personaje.<br/>
+      El objetivo de cada nivel es empujar los objetos hasta que todos
+      queden en el lugar marcado.
+    </div><br/>
+
+    <div class="info">
+      <h2>Uso en páginas web</h2>
+      El applet permite el empleo de diferentes archivos de niveles, así como temas distintos que pueden usarse en diferentes instancias del applet simplemente modificando los parámetros en el código html de la página:
+
+      <div class="code">
+        &lt;applet code="sokoapplet.SokoApplet.class"
+        archive="http://www.uco.es/~q22cavaf/sokoban/bin/sokoapplet.jar"
+        width="500" height="500"<br/>
+        alt="Necesitas java instalado en el navegador para poder ver applets"&gt;<br/>
+        &lt;param name="levelset"
+        value="<b>dirección del archivo de niveles</b>"&gt;<br/>
+        &lt;param name="theme"
+        value="<b>dirección del directorio del tema</b>"&gt;<br/>
+        &lt;/applet&gt;<br/>
+      </div>
+
+      Las direcciones indicadas pueden ser tanto absolutas como relativas.<br/>
+      Por defecto, se usará como archivo de niveles "levels.txt" (ubicado en el directorio actual) y como tema se mirará en el directorio actual para los archivos de imágenes y sonido.<br/>
+    </div>
+
+    <div class="info">
+      <h2>Links con packs de niveles compatibles con el Applet</h2>
+      <ul>
+        <li><a href="http://www.sneezingtiger.com/sokoban/levels.html">
+            Página de SneezingTiger
+          </a>
+        <li><a href="http://users.bentonrea.com/~sasquatch/sokoban/">
+            Puzzles de David W. Skinner
+          </a>
+        <li><a href="http://www.sneezingtiger.com/sokoban/levels.html">
+            Sokoban levels
+          </a>
+      </ul>
+    </div><br/>
+
+    <div class="info">
+      <h2>Documentación y código fuente</h2>
+      Si quieres ver la documentación generada por javadoc de este applet <a href="doc/index.html">puedes hacer click aquí</a>.<br/>
+      Los archivos de código fuente están asi mismo enlazados desde las páginas de la documentaión. El código de esta aplicación está licenciado bajo la <a href="http://www.gnu.org/licenses/gpl-3.0.html">licencia GNU GPLv3</a>.
+    </div>
+
+
+    <div class="games">
+      <h2>Ejemplos</h2>
+
+      <h3>
+        LevelSet: <a href="levels-easy.txt">levels-easy.txt</a><br/>
+        Theme: Tango
+      </h3>
+      <applet code="sokoapplet.SokoApplet.class"
+              archive="bin/sokoapplet.jar"
+              width="500" height="500"
+              alt="Necesitas java instalado en el navegador para poder ver applets">
+        <param name="levelset" value="levels-easy.txt"/>
+        <param name="theme" value="themes/Tango/"/>
+      </applet><br/>
+
+      <h3>
+        LevelSet: <a href="levels-medium.txt">levels-medium.txt</a><br/>
+        Theme: Ferk
+      </h3>
+      <applet code="sokoapplet.SokoApplet.class"
+              archive="bin/sokoapplet.jar"
+              width="500" height="500"
+              alt="Necesitas java instalado en el navegador para poder ver applets">
+        <param name="levelset" value="levels-medium.txt"/>
+        <param name="theme" value="themes/Ferk/"/>
+        Necesitas tener java instalado en el navegador para poder ver applets
+      </applet>
+
+      <h3>
+        LevelSet: <a href="levels-hard.txt">levels-hard.txt</a><br/>
+        Theme: Ferk
+      </h3>
+      <applet code="sokoapplet.SokoApplet.class"
+              archive="bin/sokoapplet.jar"
+              width="500" height="500"
+              alt="Necesitas java instalado en el navegador para poder ver applets">
+        <param name="levelset" value="levels-hard.txt"/>
+        <param name="theme" value="themes/Ferk/"/>
+        Necesitas tener java instalado en el navegador para poder ver applets
+      </applet><br/>
+
+      <h3>
+        Levelset: <a href="levels.txt">default (levels.txt)</a><br/>
+        Theme: Tango
+      </h3>
+      <applet code="sokoapplet.SokoApplet.class"
+              archive="bin/sokoapplet.jar"
+              width="500" height="500"
+              alt="Necesitas tener java instalado en el navegador para poder ver applets">
+        <param name="theme" value="themes/Tango/"/>
+      </applet><br/>
+    </div>
+
+
+    <div class="footer">
+
+      
+      <a href="http://validator.w3.org/check?uri=referer">
+        <img src="http://www.w3.org/Icons/valid-xhtml10-blue"
+             alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+      </a>
+      
+      <!-- Site Meter -->
+      <script type="text/javascript" src="http://s20.sitemeter.com/js/counter.js?site=s20cavaf">
+      </script>
+      <noscript>
+        <a href="http://s20.sitemeter.com/stats.asp?site=s20cavaf" target="_top">
+          <img src="http://s20.sitemeter.com/meter.asp?site=s20cavaf" alt="Site Meter" border="0"/></a>
+      </noscript>
+      <!-- Copyright (c)2009 Site Meter -->
+    </div>
+
+  </body>
+</html>

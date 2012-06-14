@@ -1,0 +1,68 @@
+
+body {
+    background-color: #000;
+    background-image: url( mmonkeys.png );
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+
+body a {
+    color: #fff;
+}
+
+body a:hover, a:focus {
+    color: #555
+    font-style: italic;
+}
+
+body a:active, a:visited {
+    color: #555;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 400%;
+    font-family: Serif;
+    color: #f00;
+}
+
+h2, h3 {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 150%;
+    font-family: Serif;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+.info {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    text-align: center;
+    background-color: rgba( 255,255,255, 0.5 );
+    color: #000;
+    padding: 10px;
+}
+
+.code {
+    color: #000;
+    background-color: rgba( 255,255,255, 0.75 );
+    border-style: dotted;
+    border-width:2px;
+    margin:  25px;
+    padding: 10px;
+    text-align: left;
+    font-family: Monospace;
+}
+
+.games {
+    text-align: center;
+}

@@ -1,0 +1,5 @@
+*.jar
+*.applet
+*.pdf
+bin/
+doc/
